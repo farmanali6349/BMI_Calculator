@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/weight.svg" type="image/x-icon">
+    <title>BMI Generator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>BMI Generator</h2>
+    </header>
+
+    <div class="bodyContainer">
+
+        <!-- FORM SECTION -->
+        <section class="form">
+            <form onsubmit="calculateBMI(event)">
+                <label for="height">Enter your height(CM)</label>
+                <input type="number" id="height" min="1" inputmode="numeric" step="any" required>
+
+                <label for="weight">Enter your weight(KG)</label>
+                <input type="number" id="weight" min="1" inputmode="numeric" step="any" required>
+
+                <input type="submit" value="Calculate BMI">
+
+            </form>
+        </section>
+
+        <section class="result">
+            <h4>BMI</h4>
+            <h3 class="bmi-value">20.01</h3>
+            <h4 class="bmi-result">Normal</h4>
+        </section>
+
+        <section class="instructions">
+            <table>
+                <thead>
+                    <tr>
+                        <th>BMI Value</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Less than 18.6</td>
+                        <td>Underweight</td>
+                    </tr>
+
+                    <tr>
+                        <td>18.6 - 24.9</td>
+                        <td>Normal</td>
+                    </tr>
+
+                    <tr>
+                        <td>More than 24.9</td>
+                        <td>Overweight</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

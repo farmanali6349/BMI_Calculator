@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Archivo';
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'Clash Display';
+    src: url(fonts/ClashDisplay-Variable.ttf);
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url(fonts/Archivo-Variable.ttf);
+}
+
+
+/* Remove up and down arrow of input type number */
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Content Width Container */
+.bodyContainer {
+    width: 100%;
+    padding: 20px;
+    max-width: 546px;
+    margin: auto;
+}
+
+
+/* Header */
+
+header{
+    margin: auto;
+    padding: 64px 0;
+}
+
+header h2 {
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Clash Display';
+    font-weight: 500;
+}
+
+/* FORM */
+.form {
+    margin: auto;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+}
+
+.form form input {
+    margin-top: 8px;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.form form input[type="submit"] {
+    cursor: pointer;
+    margin-top: 16px;
+    background-color: #5A5A5A;
+    color: #fff;
+    border: none;
+    transition: background 0.5s;
+}
+
+.form form input[type="submit"]:hover {
+    background-color: #252525;
+}
+
+.form form label:nth-of-type(2) {
+    margin-top: 16px;
+}
+
+/* Result */
+.result {
+    margin: auto;
+    padding: 32px;
+    border-radius: 10px;
+    border: 1px solid #252525;
+    display: none;
+}
+
+.result h3{
+    font-size: 51px;
+    font-weight: 700;
+    line-height: 51px;
+}
+
+.result h4:nth-of-type(1){
+    font-weight: 400;
+}
+
+.result h4:nth-of-type(2){
+    text-transform: capitalize;
+}
+
+
+/* Instructions */
+.instructions {
+    margin: auto;
+    padding: 32px 0;
+}
+
+.instructions table {
+    width: 100%;
+}
+
+.instructions table thead {
+    background-color: #5A5A5A;
+    color: #fff;
+}
+
+.instructions table, .instructions table th, .instructions table td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 16px;
+}
