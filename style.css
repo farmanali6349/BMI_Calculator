@@ -133,3 +133,21 @@ header h2 {
     border-collapse: collapse;
     padding: 16px;
 }
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #252525;
+    padding: 2px;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: rgba(145, 145, 255, 0.452);
+}
